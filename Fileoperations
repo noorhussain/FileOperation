@@ -1,0 +1,14 @@
+
+
+fp=open('C:/test/file.txt','w')
+fp.write("""welcome to India
+welcome to Austraila to study
+India won the world cup ICC trophy 2011""")
+fp.close()
+fp=open('C:/test/file.txt','r')
+i=0
+for line in iter(fp):
+    print "Length of the line %d is %d " %(i,len(line.rstrip()))
+    i+=1
+
+
